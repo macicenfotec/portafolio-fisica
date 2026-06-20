@@ -1,18 +1,318 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Física - Maciel Gómez</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Física - Maciel Gómez</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+  <header class="hero">
     <h1>Portafolio de Física</h1>
+    <p>Aplicada a Ingeniería del Software</p>
     <h2>Maciel Gómez López</h2>
+    <span>Avance 1: Semanas 1 a 5</span>
+  </header>
 
-    <p>
-        Este sitio presenta aplicaciones de la física en Ingeniería del Software.
-    </p>
+  <nav class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#avance1">Avance 1</a>
+    <a href="#referencias">Referencias</a>
+  </nav>
+
+  <main id="inicio">
+
+    <section class="intro">
+      <h2>Bienvenida</h2>
+      <p>
+        Este portafolio presenta ejemplos de cómo los conceptos físicos vistos en clase
+        se aplican en áreas de Ingeniería del Software, como videojuegos, simulaciones,
+        robótica, animación, realidad virtual y motores físicos.
+      </p>
+    </section>
+
+    <section id="avance1" class="avance">
+      <h2>Avance 1</h2>
+      <p class="subtitulo">
+        Temas correspondientes a las semanas 1 a 5.
+      </p>
+
+      <div class="grid-temas">
+
+        <article class="card">
+          <span class="numero">1</span>
+          <h3>Movimiento en 3 Dimensiones</h3>
+          <p>Aplicación del movimiento tridimensional en software.</p>
+          <a href="#movimiento3d">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">2</span>
+          <h3>Movimiento Circular Uniforme</h3>
+          <p>Uso del movimiento circular en simulaciones y videojuegos.</p>
+          <a href="#mcu">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">3</span>
+          <h3>Fuerza Centrípeta</h3>
+          <p>Fuerza necesaria para mantener trayectorias circulares.</p>
+          <a href="#centripeta">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">4</span>
+          <h3>Fuerza de Fricción</h3>
+          <p>Simulación de contacto entre superficies.</p>
+          <a href="#friccion">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">5</span>
+          <h3>Trabajo</h3>
+          <p>Transferencia de energía mediante una fuerza.</p>
+          <a href="#trabajo">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">6</span>
+          <h3>Conservación de la Energía</h3>
+          <p>Análisis de energía potencial y cinética.</p>
+          <a href="#energia">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">7</span>
+          <h3>Impulso</h3>
+          <p>Cambio de cantidad de movimiento en un intervalo de tiempo.</p>
+          <a href="#impulso">Ver entrada</a>
+        </article>
+
+        <article class="card">
+          <span class="numero">8</span>
+          <h3>Colisiones Inelásticas</h3>
+          <p>Choques donde los objetos quedan unidos o pierden energía cinética.</p>
+          <a href="#colisiones">Ver entrada</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="movimiento3d" class="entrada">
+<section id="movimiento3d" class="entrada">
+
+  <h2>Movimiento en 3 Dimensiones</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación del movimiento en tres dimensiones en Ingeniería del
+    Software es la simulación de drones autónomos utilizada para entrenamiento y
+    pruebas de algoritmos de navegación.
+  </p>
+
+  <p>
+    Plataformas como Microsoft AirSim y Gazebo permiten simular el desplazamiento
+    de drones en entornos virtuales antes de implementarlos en el mundo real.
+    El software debe calcular continuamente la posición del dron en los ejes X, Y y Z
+    para evitar obstáculos y alcanzar su destino.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    El movimiento en tres dimensiones se describe mediante el vector de posición:
+  </p>
+
+  <p class="formula">
+    r(t) = x(t)·i + y(t)·j + z(t)·k
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>x(t)</strong>: posición sobre el eje X.</li>
+    <li><strong>y(t)</strong>: posición sobre el eje Y.</li>
+    <li><strong>z(t)</strong>: posición sobre el eje Z.</li>
+    <li><strong>i, j, k</strong>: vectores unitarios de cada eje.</li>
+  </ul>
+
+  <p>
+    La velocidad se obtiene mediante:
+  </p>
+
+  <p class="formula">
+    v(t) = dr(t) / dt
+  </p>
+
+  <p>
+    Y la aceleración mediante:
+  </p>
+
+  <p class="formula">
+    a(t) = dv(t) / dt
+  </p>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso de modelos físicos permite representar el movimiento del dron de forma
+    realista y precisa. Esto facilita el desarrollo y la validación de algoritmos
+    de navegación, control automático y detección de obstáculos.
+  </p>
+
+  <p>
+    Utilizar ecuaciones físicas es más eficiente que emplear trayectorias
+    precalculadas o posiciones fijas, ya que el dron puede reaccionar dinámicamente
+    a cambios en el entorno, ajustar su velocidad y modificar su trayectoria en
+    tiempo real.
+  </p>
+
+  <h3>Elemento de apoyo</h3>
+
+  <p>
+    Diagrama del sistema de coordenadas tridimensionales utilizado para representar
+    la posición del dron.
+  </p>
+
+  <img src="images/Screenshot 2026-06-20 072022.png"
+       alt="Sistema de coordenadas tridimensionales"
+       class="imagen-apoyo">
+
+    <p class="referencia">
+  Fuente: OpenStax, University Physics Volume 1.
+</p>
+
+</section>
+
+
+    <section id="mcu" class="entrada">
+
+  <h2>Movimiento Circular Uniforme</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación del movimiento circular uniforme en Ingeniería del
+    Software es la simulación de satélites en aplicaciones de visualización espacial,
+    como NASA Eyes, Celestia o Universe Sandbox.
+  </p>
+
+  <p>
+    Estos sistemas permiten representar la órbita de satélites artificiales alrededor
+    de la Tierra para fines educativos, científicos y de monitoreo. El software calcula
+    continuamente la posición angular del satélite para mostrar su ubicación en tiempo real.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    En el movimiento circular uniforme, un objeto se desplaza con rapidez constante
+    a lo largo de una trayectoria circular.
+  </p>
+
+  <p class="formula">
+    θ(t) = θ₀ + ω·t
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>θ(t)</strong>: posición angular del satélite.</li>
+    <li><strong>θ₀</strong>: posición angular inicial.</li>
+    <li><strong>ω</strong>: velocidad angular constante.</li>
+    <li><strong>t</strong>: tiempo.</li>
+  </ul>
+
+  <p>
+    La velocidad angular se calcula mediante:
+  </p>
+
+  <p class="formula">
+    ω = 2π / T
+  </p>
+
+  <p>
+    Donde <strong>T</strong> es el período de la órbita.
+  </p>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso del movimiento circular uniforme permite representar de forma realista
+    la trayectoria orbital de un satélite y predecir su posición en cualquier instante.
+  </p>
+
+  <p>
+    Este modelo físico es superior al uso de posiciones precalculadas o animaciones
+    fijas, ya que facilita la actualización dinámica de la órbita cuando cambian
+    parámetros como el período, la velocidad angular o la escala de la simulación.
+  </p>
+
+  <h3>Elemento de apoyo</h3>
+
+  <p>
+    La siguiente imagen muestra un satélite describiendo una trayectoria circular
+    alrededor de la Tierra.
+  </p>
+
+  <img
+    src="images/Screenshot 2026-06-20 072905.png"
+    alt="Satélite orbitando la Tierra en movimiento circular uniforme"
+    class="imagen-apoyo">
+
+  <p class="referencia">
+    Fuente: imagen educativa sobre movimiento orbital y fuerza centrípeta.
+  </p>
+
+    </section>
+
+    <section id="centripeta" class="entrada">
+      <h2>Fuerza Centrípeta</h2>
+      <p>Aquí irá la entrada completa del tema.</p>
+    </section>
+
+    <section id="friccion" class="entrada">
+      <h2>Fuerza de Fricción</h2>
+      <p>Aquí irá la entrada completa del tema.</p>
+    </section>
+
+    <section id="trabajo" class="entrada">
+      <h2>Trabajo</h2>
+      <p>Aquí irá la entrada completa del tema.</p>
+    </section>
+
+    <section id="energia" class="entrada">
+      <h2>Conservación de la Energía</h2>
+      <p>Aquí irá la entrada completa del tema.</p>
+    </section>
+
+    <section id="impulso" class="entrada">
+      <h2>Impulso</h2>
+      <p>Aquí irá la entrada completa del tema.</p>
+    </section>
+
+    <section id="colisiones" class="entrada">
+      <h2>Colisiones Inelásticas</h2>
+      <p>Aquí irá la entrada completa del tema.</p>
+    </section>
+
+    <section id="referencias" class="entrada">
+      <h2>Referencias</h2>
+      <p>Aquí se agregarán las fuentes consultadas.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Portafolio de Física - Maciel Gómez López</p>
+  </footer>
 
 </body>
 </html>
