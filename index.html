@@ -273,35 +273,501 @@
 
     </section>
 
-    <section id="centripeta" class="entrada">
-      <h2>Fuerza Centrípeta</h2>
-      <p>Aquí irá la entrada completa del tema.</p>
-    </section>
 
-    <section id="friccion" class="entrada">
-      <h2>Fuerza de Fricción</h2>
-      <p>Aquí irá la entrada completa del tema.</p>
-    </section>
+<section id="centripeta" class="entrada">
 
-    <section id="trabajo" class="entrada">
-      <h2>Trabajo</h2>
-      <p>Aquí irá la entrada completa del tema.</p>
-    </section>
+  <h2>Fuerza Centrípeta</h2>
 
-    <section id="energia" class="entrada">
-      <h2>Conservación de la Energía</h2>
-      <p>Aquí irá la entrada completa del tema.</p>
-    </section>
+  <h3>Caso específico</h3>
 
-    <section id="impulso" class="entrada">
-      <h2>Impulso</h2>
-      <p>Aquí irá la entrada completa del tema.</p>
-    </section>
+  <p>
+    Un ejemplo de aplicación de la fuerza centrípeta en Ingeniería del Software
+    es el cálculo de órbitas satelitales en aplicaciones de visualización espacial
+    como NASA Eyes, Celestia o Universe Sandbox.
+  </p>
 
-    <section id="colisiones" class="entrada">
-      <h2>Colisiones Inelásticas</h2>
-      <p>Aquí irá la entrada completa del tema.</p>
-    </section>
+  <p>
+    Estos sistemas deben calcular continuamente la fuerza necesaria para mantener
+    al satélite en una trayectoria circular alrededor de la Tierra, evitando que
+    se aleje al espacio o colisione con el planeta.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    La fuerza centrípeta es la fuerza neta dirigida hacia el centro de la trayectoria
+    circular y es responsable de cambiar continuamente la dirección del movimiento.
+  </p>
+
+  <p class="formula">
+    F<sub>c</sub> = (m · v²) / r
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>F<sub>c</sub></strong>: fuerza centrípeta.</li>
+    <li><strong>m</strong>: masa del satélite.</li>
+    <li><strong>v</strong>: velocidad tangencial.</li>
+    <li><strong>r</strong>: radio de la órbita.</li>
+  </ul>
+
+  <p>
+    En el caso de los satélites, la fuerza gravitacional actúa como fuerza centrípeta.
+  </p>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso de la fuerza centrípeta permite simular órbitas de forma realista y predecir
+    la trayectoria de los satélites con precisión.
+  </p>
+
+  <p>
+    Emplear modelos físicos es más efectivo que utilizar trayectorias prediseñadas,
+    ya que el software puede reaccionar dinámicamente a cambios en la velocidad,
+    masa o distancia respecto al planeta.
+  </p>
+
+  <p>
+    Esto resulta fundamental en simuladores espaciales, aplicaciones educativas
+    y sistemas de monitoreo satelital.
+  </p>
+
+  <h3>Elemento de apoyo</h3>
+
+  <p>
+    La siguiente imagen muestra la fuerza dirigida hacia el centro de la órbita,
+    responsable de mantener el movimiento circular del satélite.
+  </p>
+
+  <img
+    src="images/Screenshot 2026-06-20 072905.png"
+    alt="Fuerza centrípeta actuando sobre un satélite"
+    class="imagen-apoyo">
+
+  <p class="referencia">
+    Fuente: imagen educativa sobre movimiento orbital y fuerza centrípeta.
+  </p>
+
+</section>
+
+<section id="friccion" class="entrada">
+
+  <h2>Fuerza de Fricción</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación de la fuerza de fricción en Ingeniería del Software
+    es la simulación del comportamiento de vehículos en videojuegos de carreras,
+    como Forza Horizon, Gran Turismo o Mario Kart.
+  </p>
+
+  <p>
+    Los motores físicos de estos juegos calculan la interacción entre las llantas
+    y la superficie de la pista para determinar la aceleración, el frenado y la
+    capacidad de tomar curvas.
+  </p>
+
+  <p>
+    El software debe considerar diferentes tipos de superficies, como asfalto,
+    tierra, césped o hielo, cada una con distintos niveles de adherencia.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    La fuerza de fricción se opone al movimiento relativo entre dos superficies
+    en contacto.
+  </p>
+
+  <p class="formula">
+    F<sub>f</sub> = μ · N
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>F<sub>f</sub></strong>: fuerza de fricción.</li>
+    <li><strong>μ</strong>: coeficiente de fricción.</li>
+    <li><strong>N</strong>: fuerza normal.</li>
+  </ul>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso de modelos físicos permite que los vehículos respondan de manera
+    realista a diferentes condiciones del terreno.
+  </p>
+
+  <p>
+    Sin la aplicación de la fuerza de fricción, todos los vehículos tendrían el
+    mismo comportamiento independientemente de la superficie, lo que reduciría
+    el realismo y la experiencia del usuario.
+  </p>
+
+  <p>
+    Utilizar ecuaciones físicas permite ajustar dinámicamente el nivel de agarre,
+    la distancia de frenado y la estabilidad del vehículo.
+  </p>
+
+<h3>Elemento de apoyo</h3>
+
+<p>
+  La siguiente imagen compara el comportamiento de un vehículo sobre superficies
+  con diferentes niveles de fricción. Los motores físicos de los videojuegos
+  utilizan coeficientes de fricción distintos para simular cambios en la tracción,
+  la estabilidad y la distancia de frenado.
+</p>
+
+<img
+  src="images/Screenshot 2026-06-20 142726.png"
+  alt="Comparación del comportamiento de un vehículo sobre superficies con diferente fricción"
+  class="imagen-apoyo">
+
+<p class="referencia">
+  Fuente: imagen educativa sobre fricción entre neumáticos y superficie de la carretera.
+</p>
+
+</section>
+
+<section id="trabajo" class="entrada">
+
+  <h2>Trabajo</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación del concepto de trabajo en Ingeniería del Software
+    es el cálculo del consumo de energía de robots industriales dentro de simuladores
+    de automatización.
+  </p>
+
+  <p>
+    En una fábrica virtual, el software puede simular un brazo robótico que mueve
+    una pieza desde una banda transportadora hasta una zona de ensamblaje. Para
+    estimar el esfuerzo realizado por el robot, se calcula el trabajo hecho por
+    la fuerza aplicada durante el desplazamiento.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    El trabajo se define como la energía transferida cuando una fuerza produce
+    un desplazamiento.
+  </p>
+
+  <p class="formula">
+    W = F · d · cos(θ)
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>W</strong>: trabajo realizado.</li>
+    <li><strong>F</strong>: fuerza aplicada.</li>
+    <li><strong>d</strong>: desplazamiento.</li>
+    <li><strong>θ</strong>: ángulo entre la fuerza y el desplazamiento.</li>
+  </ul>
+
+  <h3>Justificación</h3>
+
+  <p>
+    Este modelo permite estimar cuánta energía necesita un robot para mover una
+    carga dentro de una simulación industrial.
+  </p>
+
+  <p>
+    Usar el concepto físico de trabajo es mejor que asignar un consumo fijo de
+    energía, porque el gasto cambia según la fuerza aplicada, la distancia recorrida
+    y la dirección del movimiento.
+  </p>
+
+  <p>
+    Esto ayuda a optimizar procesos, comparar rutas de movimiento y reducir el
+    consumo energético antes de implementar el sistema en una fábrica real.
+  </p>
+
+ <h3>Elemento de apoyo</h3>
+
+<p>
+  La siguiente imagen muestra un brazo robótico industrial utilizado en procesos
+  automatizados de manufactura. Los simuladores industriales emplean el concepto
+  de trabajo para estimar la energía necesaria para mover piezas y optimizar
+  las trayectorias de los robots.
+</p>
+
+<img
+  src="images/Screenshot 2026-06-20 143206.png"
+  alt="Brazo robótico realizando trabajo mecánico en una línea de producción"
+  class="imagen-apoyo">
+
+<p class="referencia">
+  Fuente: imagen de automatización industrial y robótica colaborativa.
+</p>
+
+</section>
+
+<section id="energia" class="entrada">
+
+  <h2>Conservación de la Energía</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación de la conservación de la energía en Ingeniería del
+    Software es la simulación de montañas rusas en motores físicos y videojuegos.
+  </p>
+
+  <p>
+    Simuladores como NoLimits Roller Coaster o videojuegos de construcción y
+    gestión utilizan modelos físicos para calcular la velocidad de los vagones
+    según la altura de la pista.
+  </p>
+
+  <p>
+    El software debe determinar cómo la energía potencial gravitatoria se transforma
+    en energía cinética a medida que el vagón desciende y asciende a lo largo del recorrido.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    El principio de conservación de la energía establece que la energía no se crea
+    ni se destruye, solo se transforma.
+  </p>
+
+  <p class="formula">
+    E<sub>m</sub> = E<sub>p</sub> + E<sub>c</sub>
+  </p>
+
+  <p class="formula">
+    mgh + ½mv² = constante
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>E<sub>m</sub></strong>: energía mecánica total.</li>
+    <li><strong>E<sub>p</sub></strong>: energía potencial gravitatoria.</li>
+    <li><strong>E<sub>c</sub></strong>: energía cinética.</li>
+    <li><strong>m</strong>: masa del objeto.</li>
+    <li><strong>g</strong>: aceleración de la gravedad.</li>
+    <li><strong>h</strong>: altura.</li>
+    <li><strong>v</strong>: velocidad.</li>
+  </ul>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso de la conservación de la energía permite calcular la velocidad del vagón
+    en cualquier punto del recorrido sin necesidad de definir velocidades fijas.
+  </p>
+
+  <p>
+    Esto mejora el realismo de la simulación, ya que la velocidad depende directamente
+    de la altura y de la energía disponible en el sistema.
+  </p>
+
+  <p>
+    Además, permite diseñar recorridos seguros y optimizar la experiencia del usuario
+    antes de construir una atracción real.
+  </p>
+
+<h3>Elemento de apoyo</h3>
+
+<p>
+  La siguiente imagen muestra cómo la energía potencial gravitatoria y la energía
+  cinética se transforman durante el recorrido de una montaña rusa. En los puntos
+  más altos, la energía potencial es mayor; mientras que en los descensos aumenta
+  la energía cinética debido al incremento de la velocidad.
+</p>
+
+<img
+  src="images/Screenshot 2026-06-20 143707.png"
+  alt="Transformación de energía potencial y cinética en una montaña rusa"
+  class="imagen-apoyo">
+
+<p class="referencia">
+  Fuente: imagen educativa sobre conservación de la energía en montañas rusas.
+</p>
+
+</section>
+
+<section id="impulso" class="entrada">
+
+  <h2>Impulso</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación del impulso en Ingeniería del Software es la simulación
+    del despegue y las maniobras de cohetes en software aeroespacial, como
+    Kerbal Space Program, Space Engine o simuladores utilizados por agencias espaciales.
+  </p>
+
+  <p>
+    Estos sistemas deben calcular el cambio de velocidad que experimenta un cohete
+    cuando expulsa gases a alta velocidad mediante sus motores de propulsión.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    El impulso representa el efecto de una fuerza aplicada durante un intervalo de tiempo
+    y equivale al cambio en la cantidad de movimiento del objeto.
+  </p>
+
+  <p class="formula">
+    J = F · Δt
+  </p>
+
+  <p class="formula">
+    J = Δp = m · v<sub>f</sub> - m · v<sub>i</sub>
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>J</strong>: impulso.</li>
+    <li><strong>F</strong>: fuerza aplicada.</li>
+    <li><strong>Δt</strong>: intervalo de tiempo.</li>
+    <li><strong>Δp</strong>: cambio en la cantidad de movimiento.</li>
+    <li><strong>m</strong>: masa del cohete.</li>
+    <li><strong>v<sub>i</sub></strong>: velocidad inicial.</li>
+    <li><strong>v<sub>f</sub></strong>: velocidad final.</li>
+  </ul>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso del impulso permite calcular con precisión cómo cambia la velocidad de
+    un cohete al expulsar gases durante la combustión.
+  </p>
+
+  <p>
+    Emplear este modelo físico es más realista que asignar velocidades fijas o
+    animaciones predeterminadas, ya que el movimiento depende de la fuerza del motor,
+    la masa del vehículo y el tiempo de funcionamiento.
+  </p>
+
+  <p>
+    Esto resulta fundamental para el diseño de simuladores aeroespaciales,
+    videojuegos y sistemas de entrenamiento para misiones espaciales.
+  </p>
+
+ <h3>Elemento de apoyo</h3>
+
+<p>
+  La siguiente imagen muestra el despegue de un cohete impulsado por la expulsión
+  de gases a alta velocidad. El impulso generado por los motores produce un cambio
+  en la cantidad de movimiento del vehículo, permitiendo su aceleración y ascenso.
+</p>
+
+<img
+  src="images/Screenshot 2026-06-20 144749.png"
+  alt="Cohete despegando mediante propulsión a chorro"
+  class="imagen-apoyo">
+
+<p class="referencia">
+  Fuente: imagen del lanzamiento del cohete SLS de la NASA.
+</p>
+
+</section>
+
+<section id="colisiones" class="entrada">
+
+  <h2>Colisiones Inelásticas</h2>
+
+  <h3>Caso específico</h3>
+
+  <p>
+    Un ejemplo de aplicación de las colisiones inelásticas en Ingeniería del
+    Software es la simulación de accidentes vehiculares en videojuegos y sistemas
+    de entrenamiento vial.
+  </p>
+
+  <p>
+    Videojuegos como BeamNG.drive utilizan motores físicos avanzados para recrear
+    choques entre vehículos, permitiendo analizar deformaciones, pérdida de energía
+    y cambios en la velocidad después del impacto.
+  </p>
+
+  <p>
+    Este tipo de simulaciones también se emplea en software de seguridad vial para
+    estudiar el comportamiento de los vehículos durante una colisión.
+  </p>
+
+  <h3>Concepto físico aplicado</h3>
+
+  <p>
+    En una colisión inelástica, los objetos permanecen unidos o experimentan una
+    pérdida significativa de energía cinética después del impacto. Sin embargo,
+    la cantidad de movimiento total del sistema se conserva.
+  </p>
+
+  <p class="formula">
+    m₁v₁ + m₂v₂ = (m₁ + m₂)v<sub>f</sub>
+  </p>
+
+  <p>
+    Donde:
+  </p>
+
+  <ul>
+    <li><strong>m₁, m₂</strong>: masas de los vehículos.</li>
+    <li><strong>v₁, v₂</strong>: velocidades iniciales.</li>
+    <li><strong>v<sub>f</sub></strong>: velocidad final después del choque.</li>
+  </ul>
+
+  <h3>Justificación</h3>
+
+  <p>
+    El uso de modelos físicos permite representar de forma realista el comportamiento
+    de los vehículos durante una colisión.
+  </p>
+
+  <p>
+    Emplear ecuaciones de conservación del momento lineal es más preciso que utilizar
+    animaciones predefinidas, ya que la respuesta del sistema depende de variables
+    como la masa y la velocidad de cada vehículo.
+  </p>
+
+  <p>
+    Esto mejora el realismo de los videojuegos y contribuye al desarrollo de sistemas
+    de simulación para educación vial, investigación y diseño de vehículos más seguros.
+  </p>
+
+  <h3>Elemento de apoyo</h3>
+
+<p>
+  La siguiente imagen muestra una colisión entre dos vehículos. Durante el impacto,
+  parte de la energía cinética se transforma en deformación, sonido y calor. Aunque
+  la energía cinética no se conserva completamente, el momento lineal total del
+  sistema permanece constante.
+</p>
+
+<img
+  src="images/Screenshot 2026-06-20 145435.png"
+  alt="Colisión inelástica entre dos vehículos"
+  class="imagen-apoyo">
+
+<p class="referencia">
+  Fuente: imagen educativa sobre colisiones vehiculares y conservación del momento lineal.
+</p>
+
+</section>
 
     <section id="referencias" class="entrada">
       <h2>Referencias</h2>
