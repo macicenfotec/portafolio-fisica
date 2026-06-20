@@ -9,21 +9,21 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f7fb;
-  color: #1f2937;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff7fb;
+  color: #2f2933;
   line-height: 1.6;
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  background: linear-gradient(135deg, #f9a8d4, #c084fc, #93c5fd);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 44px;
   margin-bottom: 10px;
 }
 
@@ -34,25 +34,28 @@ body {
 
 .hero h2 {
   font-size: 22px;
-  margin-bottom: 8px;
 }
 
 .hero span {
-  color: #bfdbfe;
+  display: inline-block;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 8px 18px;
+  border-radius: 20px;
   font-weight: bold;
 }
 
 .nav {
   background: white;
   max-width: 1000px;
-  margin: -25px auto 30px;
+  margin: -28px auto 30px;
   padding: 18px;
-  border-radius: 16px;
+  border-radius: 24px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 14px;
   flex-wrap: wrap;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(192, 132, 252, 0.25);
   position: sticky;
   top: 10px;
   z-index: 10;
@@ -60,15 +63,17 @@ body {
 
 .nav a {
   text-decoration: none;
-  background-color: #1d4ed8;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
+  background: #fce7f3;
+  color: #9d174d;
+  padding: 10px 22px;
+  border-radius: 999px;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 .nav a:hover {
-  background-color: #0f172a;
+  background: #db2777;
+  color: white;
 }
 
 main {
@@ -81,21 +86,33 @@ main {
 .avance,
 .entrada {
   background: white;
-  padding: 28px;
+  padding: 30px;
   margin-bottom: 28px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  box-shadow: 0 6px 18px rgba(219, 39, 119, 0.08);
+}
+
+.intro {
+  border-left: 8px solid #f9a8d4;
+}
+
+.avance {
+  border-left: 8px solid #c084fc;
+}
+
+.entrada {
+  border-left: 8px solid #f472b6;
 }
 
 .intro h2,
 .avance h2,
 .entrada h2 {
-  color: #0f172a;
+  color: #831843;
   margin-bottom: 12px;
 }
 
 .subtitulo {
-  color: #4b5563;
+  color: #6b5265;
   margin-bottom: 20px;
 }
 
@@ -107,43 +124,43 @@ main {
 }
 
 .card {
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
+  background: #fff7fb;
+  border: 1px solid #fbcfe8;
   padding: 22px;
-  border-radius: 16px;
+  border-radius: 22px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(219, 39, 119, 0.14);
 }
 
 .numero {
   display: inline-block;
-  background: #1d4ed8;
+  background: linear-gradient(135deg, #ec4899, #a855f7);
   color: white;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   text-align: center;
-  line-height: 36px;
+  line-height: 38px;
   border-radius: 50%;
   font-weight: bold;
   margin-bottom: 12px;
 }
 
 .card h3 {
-  color: #0f172a;
+  color: #831843;
   margin-bottom: 8px;
 }
 
 .card p {
-  color: #4b5563;
+  color: #5f4b5b;
   margin-bottom: 12px;
 }
 
 .card a {
-  color: #1d4ed8;
+  color: #db2777;
   text-decoration: none;
   font-weight: bold;
 }
@@ -152,15 +169,48 @@ main {
   text-decoration: underline;
 }
 
-.entrada {
-  border-left: 6px solid #1d4ed8;
+.formula {
+  background-color: #fdf2f8;
+  border-left: 5px solid #ec4899;
+  padding: 14px;
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.imagen-apoyo {
+  width: 100%;
+  max-width: 620px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.referencia {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #7c6073;
+  font-style: italic;
+  text-align: center;
+}
+
+.lista-referencias {
+  padding-left: 20px;
+}
+
+.lista-referencias li {
+  margin-bottom: 15px;
+  line-height: 1.8;
 }
 
 footer {
   text-align: center;
-  background: #0f172a;
+  background: #831843;
   color: white;
-  padding: 20px;
+  padding: 22px;
   margin-top: 40px;
 }
 
@@ -181,30 +231,4 @@ footer {
     width: 100%;
     text-align: center;
   }
-}
-
-.formula {
-  background-color: #eff6ff;
-  border-left: 4px solid #1d4ed8;
-  padding: 12px;
-  margin: 15px 0;
-  font-weight: bold;
-  font-size: 1.1rem;
-  overflow-x: auto;
-}
-
-.imagen-apoyo {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-}
-
-.referencia {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #6b7280;
-  font-style: italic;
-  text-align: center;
 }
